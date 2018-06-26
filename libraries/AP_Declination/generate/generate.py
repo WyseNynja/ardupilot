@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     for i,lat in enumerate(lats):
         for j,lon in enumerate(lons):
-            mag = igrf.igrf(date=date, glat=lat, glon=lon, alt=0., isv=0, itype=1)
+            mag = igrf.igrf(date, glat=lat, glon=lon, alt=0., isv=0, itype=1)
             intensity_table[i][j] = mag.total/1e5
             inclination_table[i][j] = mag.incl
             declination_table[i][j] = mag.decl

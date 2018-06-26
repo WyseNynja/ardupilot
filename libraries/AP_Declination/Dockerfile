@@ -14,4 +14,4 @@ RUN { set -eux; \
     rm -rf /var/lib/apt/lists/*; \
 }
 
-RUN pip install --no-cache-dir "pyigrf12>=1.3"
+RUN pip install --no-cache-dir "pyigrf12==1.3.2"
